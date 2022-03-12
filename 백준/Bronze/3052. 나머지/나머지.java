@@ -22,9 +22,9 @@ public class Main {
             list.add((Integer.parseInt(st.nextToken())) % 42);
         }
 
-        //System.out.println(list.size());
-        bw.write(list.size() + "\n");
-        bw.flush();
+        System.out.println(list.size());
+        //bw.write(list.size() + "\n");
+        //bw.flush();
 
     }
 
