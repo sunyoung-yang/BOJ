@@ -14,14 +14,14 @@ public class Main {
         StringTokenizer st;
 
         int n = Integer.parseInt(br.readLine());
-        double[] arr = new double[n];
+        int[] arr = new int[n];
         int M = 0; // max
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
             if (M < arr[i]) {
-                M = (int) arr[i];
+                M = arr[i];
             }
         }
 
@@ -29,7 +29,7 @@ public class Main {
         double result = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            sum = (arr[i] / M) * 100;
+            sum = ((double)arr[i] / M) * 100;
             result += sum;
         }
 
