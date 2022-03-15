@@ -10,16 +10,16 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        // BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        // StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int a = Integer.parseInt(br.readLine());
-        String b = String.valueOf(br.readLine());
+        int A = Integer.parseInt(br.readLine());
+        int B = Integer.parseInt(br.readLine());
 
-        bw.write(a * (b.charAt(2) - '0') + "\n");
-        bw.write(a * (b.charAt(1) - '0') + "\n");
-        bw.write(a * (b.charAt(0) - '0') + "\n");
-        bw.flush();
-        System.out.println((a * Integer.parseInt(b)));
+        System.out.println(A * (B % 10));
+        System.out.println(A * ((B % 100) / 10));
+        System.out.println(A * (B / 100));
+        System.out.println(A * B);
 
     }
 }
