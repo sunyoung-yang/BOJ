@@ -10,7 +10,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        // BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
 
         int A = Integer.parseInt(br.readLine());
@@ -23,7 +22,7 @@ public class Main {
         }
 
         for (int j = 0; j < arr.length; j++) {
-            int cnt = 0;
+            int cnt = 0; //하나 지나면 0으로 리셋해야 하니까
             int sum = 0;
 
             for (int i = 0; i < arr[j].length(); i++) {
